@@ -58,7 +58,7 @@ else{
 Console.WriteLine("Input number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 1; i < num; i++){
+for (int i = 1; i <= num; i++){
     if (i % 2 == 0){
         Console.WriteLine(i);
     }
