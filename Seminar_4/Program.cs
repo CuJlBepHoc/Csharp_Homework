@@ -2,47 +2,46 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-// void Degree(int num1, int num2)
-// {
-//     int res = num1;
-//     for (int i = 1; i < num2; i++)
-//     {
-//         res *= num1;
+void Degree(int num1, int num2)
+{
+    int res = num1;
+    for (int i = 1; i < num2; i++)
+    {
+        res *= num1;
 
-//     }
-//     Console.WriteLine($"The number {num1} to the power of {num2} is equal to {res}");
+    }
+    Console.WriteLine($"The number {num1} to the power of {num2} is equal to {res}");
 
-// }
+}
 
-// Console.WriteLine("Enter first number");
-// int a = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Enter second number");
-// int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter first number");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter second number");
+int b = Convert.ToInt32(Console.ReadLine());
 
-// Degree(a, b);
+Degree(a, b);
 
 // // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 // // 452 -> 11
 // // 82 -> 10
 // // 9012 -> 12
 
+void SummNumber(int num)
+{
+    int sum = 0;
+    while (num > 0)
+    {
+        int digit = num % 10;
+        num /= 10;
+        sum += digit;
+    }
+    Console.WriteLine($"Sum of digits = {sum}");
+}
 
-// void SummNumber(int num)
-// {
-//     int sum = 0;
-//     while (num > 0)
-//     {
-//         int digit = num % 10;
-//         num /= 10;
-//         sum += digit;
-//     }
-//     Console.WriteLine($"Sum of digits = {sum}");
-// }
+Console.WriteLine("Enter number");
+int num = Convert.ToInt32(Console.ReadLine());
 
-// Console.WriteLine("Enter number");
-// int num = Convert.ToInt32(Console.ReadLine());
-
-// SummNumber(num);
+SummNumber(num);
 
 // Задача 29: Напишите программу, которая задаёт массив из произвольных элементов и выводит их на экран.
 // Размер массива рандом до 10, элементы до 101.
